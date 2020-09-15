@@ -1,0 +1,5 @@
+/vendor/
+user_guide
+.editorconfig
+.vscode-root
+*.scss
