@@ -23,13 +23,13 @@
                         </div>
                         <div class="col-lg-8 row">
                             <div class="col">
-                                <input type="number" class="form-control" id="tanggal" name="tanggal" placeholder="dd" required maxlength="2">
+                                <input type="number" class="form-control" id="tanggal" name="tanggal" placeholder="dd" required min="0" max="31">
                             </div>
                             <div class="col">
-                                <input type="number" class="form-control" id="bulan" name="bulan" placeholder="mm" required maxlength="2">
+                                <input type="number" class="form-control" id="bulan" name="bulan" placeholder="mm" required min="0" max="12">
                             </div>
                             <div class="col">
-                                <input type="number" class="form-control" id="tahun" name="tahun" placeholder="yyyy" required>
+                                <input type="number" class="form-control" id="tahun" name="tahun" placeholder="yyyy" required min="0">
                             </div>
                         </div>
                     </div>
