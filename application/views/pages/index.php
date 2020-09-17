@@ -31,17 +31,17 @@
                                 </div>
                                 <div class="col-lg-7 row">
                                     <div class="col">
-                                        <input type="number" class="form-control" id="tanggal" name="tanggal" placeholder="dd" min="0" max="31" required>
+                                        <input type="number" class="form-control" id="tanggal" name="tanggal" placeholder="dd" min="0" max="31" required maxlength="2" >
                                         <?php echo form_error('tanggal', '<small class="text-danger pl-4">', '</small>') ?>
 
                                     </div>
                                     <div class="col">
-                                        <input type="number" class="form-control" id="bulan" name="bulan" placeholder="mm" min="0" max="12" required>
+                                        <input type="number" class="form-control" id="bulan" name="bulan" placeholder="mm" min="0" max="12" required maxlength="2">
                                         <?php echo form_error('bulan', '<small class="text-danger pl-4">', '</small>') ?>
                                     </div>
                                     
                                     <div class="col">
-                                        <input type="number" class="form-control mx-sm-3 mb-2 " id="tahun" name="tahun" placeholder="yyyy" min="0" required>
+                                        <input type="number" class="form-control mx-sm-3 mb-2 " id="tahun" name="tahun" placeholder="yyyy" min="0" required maxlength="4">
                                         <?php echo form_error('tahun', '<small class="text-danger pl-4">', '</small>') ?>
 
                                     </div>
