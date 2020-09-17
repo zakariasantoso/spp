@@ -42,13 +42,13 @@ class Import extends CI_Controller
             $numrow = 1;
             foreach ($sheet as $row) {
                 if ($numrow > 1) {
-                    array_push($data, array(
+                    array_push($data, [
                         'nis' => $row['A'],
                         'nama'      => $row['B'],
                         'id_jurusan'      => $row['C'],
                         'kelas'      => $row['D'],
                         'tanggal_lahir' => $row['E']
-                    ));
+                    ]);
                 }
                 $numrow++;
             }
