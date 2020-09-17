@@ -227,12 +227,14 @@ class Spp extends CI_Controller
 				$this->load->view('spp/edit_siswa', $data);
 				$this->load->view('templates/footer');
 			} else {
+				$tanggalLahir = htmlspecialchars($this->input->post('tanggal') . '-' . $this->input->post('bulan') . '-' . $this->input->post('tahun'));
 				$data = [
 					'id' => $id,
 					'nama' => htmlspecialchars($this->input->post('nama')),
 					'id_jurusan' => htmlspecialchars($this->input->post('id_jurusan')),
 					'kelas' => htmlspecialchars($this->input->post('kelas')),
-					'nis' => htmlspecialchars($this->input->post('nis'))
+					'nis' => htmlspecialchars($this->input->post('nis')),
+					'tanggal_lahir' => $tanggalLahir
 				];
 				$this->spp_model->ubahSiswa($data);
 				$this->session->set_flashdata('message', '<div class="alert alert-success" role="alert">Data Siswa berhasil diubah.</div>');

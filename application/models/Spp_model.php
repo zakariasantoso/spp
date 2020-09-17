@@ -207,6 +207,7 @@ class Spp_model extends CI_Model
         $this->db->set('id_jurusan', $data['id_jurusan']);
         $this->db->set('nis', $data['nis']);
         $this->db->set('kelas', $data['kelas']);
+        $this->db->set('tanggal_lahir', $data['tanggal_lahir']);
         $this->db->where('id', $data['id']);
         return $this->db->update($this->_siswa);
     }
