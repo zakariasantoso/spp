@@ -213,6 +213,9 @@ class Spp extends CI_Controller
 				3
 			];
 			$data['siswa'] = $this->spp_model->getSiswaById($id);
+			$data['tanggal'] = explode('-', $data['siswa']['tanggal_lahir'])[0];
+			$data['bulan'] = explode('-', $data['siswa']['tanggal_lahir'])[1];
+			$data['tahun'] = explode('-', $data['siswa']['tanggal_lahir'])[2];
 			$data['jurusan'] = $this->spp_model->getAll($this->_jurusan);
 
 			$this->form_validation->set_rules('nama', 'Nama', 'required|trim');
