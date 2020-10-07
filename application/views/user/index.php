@@ -23,6 +23,7 @@
                   <p class="card-text"><?= $user['email'] ?></p>
                   <p class="card-text"><small class="text-muted">Member sejak <?= date('d F Y', $user['date_created']) ?></small></p>
                 </div>
+                <a href="<?= base_url('user/edit'); ?>" class="btn btn-primary ml-3">Edit Profile</a>
               </div>
             </div>
         </div>
