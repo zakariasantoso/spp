@@ -3,9 +3,9 @@
 -- https://www.phpmyadmin.net/
 --
 -- Host: 127.0.0.1
--- Generation Time: Sep 17, 2020 at 05:42 PM
--- Server version: 10.4.11-MariaDB
--- PHP Version: 7.4.5
+-- Generation Time: Oct 07, 2020 at 12:20 PM
+-- Server version: 10.4.14-MariaDB
+-- PHP Version: 7.4.10
 
 SET SQL_MODE = "NO_AUTO_VALUE_ON_ZERO";
 START TRANSACTION;
@@ -119,7 +119,8 @@ INSERT INTO `spp` (`id`, `nis`, `tahun_ajaran`, `pembayaran_ke`, `tanggal_bayar`
 (158, 1235, '2019/2020', 8, '12-09-2020'),
 (159, 1235, '2019/2020', 9, '12-09-2020'),
 (160, 1235, '2019/2020', 10, '12-09-2020'),
-(161, 31012, '2019/2020', 1, '15-09-2020');
+(163, 31012, '2019/2020', 1, '07-10-2020'),
+(164, 31012, '2019/2020', 2, '07-10-2020');
 
 -- --------------------------------------------------------
 
@@ -208,7 +209,6 @@ CREATE TABLE `user_menu` (
 INSERT INTO `user_menu` (`id`, `menu`) VALUES
 (1, 'admin'),
 (2, 'spp'),
-(3, 'menu'),
 (4, 'user');
 
 -- --------------------------------------------------------
@@ -252,7 +252,6 @@ CREATE TABLE `user_sub_menu` (
 INSERT INTO `user_sub_menu` (`id`, `menu_id`, `judul`, `url`, `icon`, `is_active`) VALUES
 (1, 1, 'Dashboard', 'admin', 'fas fa-fw fa-tachometer-alt', 1),
 (2, 4, 'My Profile', 'user', 'fas fa-fw fa-user', 1),
-(3, 4, 'Edit Profile', 'user/edit', 'fas fa-fw fa-user-edit', 1),
 (4, 3, 'Menu Management', 'menu', 'fas fa-fw fa-folder', 1),
 (5, 3, 'Submenu Management', 'menu/submenu', 'fas fa-fw fa-folder-open', 1),
 (9, 1, 'Role', 'admin/role', 'fas fa-fw fa-user-tie', 1),
@@ -357,7 +356,7 @@ ALTER TABLE `siswa`
 -- AUTO_INCREMENT for table `spp`
 --
 ALTER TABLE `spp`
-  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=162;
+  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=166;
 
 --
 -- AUTO_INCREMENT for table `tahun_ajaran`
