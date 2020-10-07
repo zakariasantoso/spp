@@ -56,7 +56,7 @@ class Spp_model extends CI_Model
     }
     public function getSPP()
     {
-        $query = "SELECT `spp`.*, `siswa`.*, `jurusan`.*
+        $query = "SELECT `spp`.*, `siswa`.*, `jurusan`.*, spp.id
             FROM `spp` JOIN `siswa`
             ON `spp`.`nis` = `siswa`.`nis` 
             JOIN `jurusan` ON `jurusan`.`id` = `siswa`.`id_jurusan`

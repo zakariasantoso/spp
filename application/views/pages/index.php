@@ -1,6 +1,6 @@
 <div id="content-wrapper" class="d-flex flex-column">
     <div class="d-flex justify-content-end my-1 mx-1">
-        <a href="<?= base_url('auth'); ?>" class="btn btn-primary">Login</a>
+       
     </div>
     <!-- Main Content -->
     <div id="content">
@@ -15,7 +15,13 @@
             </div>
             <div class="row mt-5">
                 <div class="col d-flex justify-content-center flex-column">
-                    <h3>Silahkan Masukkan Peserta Didik.</h3>
+                <div class="row">
+                    <div class="col d-flex justify-content-center mb-3">
+                    <a href="<?= base_url('auth'); ?>" class="btn btn-primary">Login</a>
+                    </div>
+                </div>
+
+                    <!-- <h3>Silahkan Masukkan Peserta Didik.</h3>
                     <?= $this->session->flashdata('message'); ?>
                     <form action="" method="post" class="col mt-3 row">
                         <div class="input-group mb-3 col-lg-6">
@@ -51,7 +57,7 @@
                                 </div>
                             </div>
                         </div>
-                    </form>
+                    </form> -->
 
                     <?php if ($siswa) { ?>
                         <div class="card">

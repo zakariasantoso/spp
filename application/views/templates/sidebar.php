@@ -25,7 +25,12 @@
   ?>
 
   <!-- LOOPING MENU -->
-  <?php foreach ($menu as $m) { ?>
+  <?php
+  foreach ($menu as $m) { 
+    if ($m['id'] == 1) {
+      continue;
+    } 
+    ?>
     <div class="sidebar-heading">
       <?= $m['menu']; ?>
     </div>
@@ -33,6 +38,7 @@
     <!-- LOOP SUBMENU -->
 
     <?php
+    
     $menuId = $m['id'];
     $querySubMenu = "SELECT *
               FROM `user_sub_menu` JOIN `user_menu` 

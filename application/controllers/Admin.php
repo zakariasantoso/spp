@@ -226,9 +226,9 @@ class Admin extends CI_Controller
 			$this->spp_model->hapusSPP($id);
 			$this->session->set_flashdata('message', '<div class="alert alert-danger" role="alert">Data pembayaran berhasil dibatalkan.</div>');
 
-			redirect('admin/pembayaran');
+			redirect('spp/pembayaran');
 		} else {
-			redirect('admin/pembayaran');
+			redirect('spp/pembayaran');
 		}
 	}
 	public function sekolah()

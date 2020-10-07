@@ -52,7 +52,10 @@
                             $tanggalBayar = $p['tanggal_bayar'];
                             $pembayaranKe = $p['pembayaran_ke'];
                             ?>
-                            <td><a href="<?= base_url("spp/printBayar?nis=$nis&tanggal=$tanggalBayar&pembayaranKe=$pembayaranKe"); ?>" target="_blank" class="badge badge-info">Print</a></td>
+                            <td>
+                                <a href="<?= base_url("spp/printBayar?nis=$nis&tanggal=$tanggalBayar&pembayaranKe=$pembayaranKe"); ?>" target="_blank" class="badge badge-info">Print</a>
+                                <a href="<?= base_url('admin/hapusPembayaran/') . $p['id'] ?>" class="badge badge-danger" onclick="return confirm('Anda yakin membatalkan pembayaran?')">Batal</a>
+                            </td>
                         </tr>
                     <?php } ?>
                 </tbody>
