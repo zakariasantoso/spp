@@ -19,7 +19,7 @@
                     <div class="dropdown-header">Generate Laporan</div>
                     <a class="dropdown-item" href="#" onclick="window.open('<?= base_url('spp/printPembayaran/') ?>')">Print Hari Ini</a>
                     <a class="dropdown-item" href="#" onclick="window.open('<?= base_url('spp/printPembayaranBulan/') ?>')">Print Bulan Ini</a>
-                    <a class="dropdown-item" href="#" onclick="window.open('<?= base_url('spp/printPembayaranTahunAjaran/') ?><?= $tahunAjaran['tahun_awal'] . '/' . $tahunAjaran['tahun_akhir']; ?>')">Print Tahun Ajaran <?= $tahunAjaran['tahun_awal'] . '/' . $tahunAjaran['tahun_awal']; ?></a>
+                    <a class="dropdown-item" href="#" onclick="window.open('<?= base_url('spp/printPembayaranTahunAjaran/') ?><?= $tahunAjaran['tahun_awal'] . '/' . $tahunAjaran['tahun_akhir']; ?>')">Print Tahun Ajaran <?= $tahunAjaran['tahun_awal'] . '/' . $tahunAjaran['tahun_akhir']; ?></a>
                     <!-- <div class="dropdown-divider"></div>
                     <a class="dropdown-item" href="#" onclick="window.open('<?= base_url('inventaris/printBarang'); ?>')">Print Semua Data</a> -->
                 </div>
