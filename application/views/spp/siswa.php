@@ -13,7 +13,7 @@
             <?php } ?>
             <?= $this->session->flashdata('message'); ?>
             <a href="" class="btn btn-primary" data-toggle="modal" data-target="#siswaModal">Tambah Siswa</a>
-            <a href="#" class="btn btn-dark" onclick="window.open('<?= base_url('spp/printSiswa'); ?>')">Print</a>
+            <!-- <a href="#" class="btn btn-dark" onclick="window.open('<?= base_url('spp/printSiswa'); ?>')">Print</a> -->
             <a href="<?= base_url('import'); ?>" class="btn btn-success">Import Excel</a>
             
             <form action="<?= base_url('spp/printFilter'); ?>" method="post" class="col-lg-8 row mt-3">
