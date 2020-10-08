@@ -74,6 +74,16 @@ class Spp_model extends CI_Model
             ";
         return $this->db->query($query)->result_array();
     }
+    public function getTotalSPP()
+    {
+        $query = "SELECT `spp`.*, `siswa`.*, `jurusan`.*, siswa.nama AS nama_siswa
+            FROM `spp` JOIN `siswa`
+            ON `spp`.`nis` = `siswa`.`nis` 
+            JOIN `jurusan` ON `jurusan`.`id` = `siswa`.`id_jurusan`
+            ORDER BY `siswa`.`kelas` DESC
+            ";
+        return $this->db->query($query)->result_array();
+    }
     public function getSPPBulanIni()
     {
         $tanggal = date('-m-Y');

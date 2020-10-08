@@ -471,6 +471,17 @@ class Spp extends CI_Controller
 		$this->load->view('admin/print_pembayaran', $data);
 		$this->load->view('templates/footer');
 	}
+	public function printTotalBayar()
+	{
+		$data['tahunAjaran'] = $this->spp_model->getAll($this->_tahunAjaran)[0];
+		$data['spp'] = $this->spp_model->getTotalSpp();
+		$data['sekolah'] = $this->spp_model->getAll($this->_sekolah)[0];
+		$data['title'] = "Data pembayaran siswa";
+		// header('Content-type: application/pdf');
+		$this->load->view('templates/header', $data);
+		$this->load->view('admin/print_total_pembayaran', $data);
+		$this->load->view('templates/footer');
+	}
 	public function printPembayaranBulan()
 	{
 		$data['sekolah'] = $this->spp_model->getAll($this->_sekolah)[0];
