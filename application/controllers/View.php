@@ -48,4 +48,12 @@ class View extends CI_Controller
         $this->load->view('pages/index', $data);
         $this->load->view('templates/footer');
     }
+    public function about()
+    {
+        $data['sekolah'] = $this->spp_model->getAll($this->_sekolah)[0];
+        $data['title'] = 'Tentang Aplikasi E - SPP';
+        $this->load->view('templates/header', $data);
+        $this->load->view('pages/about', $data);
+        $this->load->view('templates/footer');
+    }
 }

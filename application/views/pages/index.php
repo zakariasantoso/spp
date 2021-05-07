@@ -17,11 +17,12 @@
                 <div class="col d-flex justify-content-center flex-column">
                 <div class="row">
                     <div class="col d-flex justify-content-center mb-3">
-                    <a href="<?= base_url('auth'); ?>" class="btn btn-primary">Login</a>
+                    <a href="<?= base_url('auth'); ?>" class="btn btn-primary">Login Admin</a>
+                    <a href="<?= base_url('view/about'); ?>" class="btn btn-info ml-3">Tentang Program</a>
                     </div>
                 </div>
 
-                    <!-- <h3>Silahkan Masukkan Peserta Didik.</h3>
+                    <h3>Silahkan Masukkan Peserta Didik.</h3>
                     <?= $this->session->flashdata('message'); ?>
                     <form action="" method="post" class="col mt-3 row">
                         <div class="input-group mb-3 col-lg-6">
@@ -57,7 +58,7 @@
                                 </div>
                             </div>
                         </div>
-                    </form> -->
+                    </form>
 
                     <?php if ($siswa) { ?>
                         <div class="card">
